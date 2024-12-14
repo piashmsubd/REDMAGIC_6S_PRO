@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from NX669J device
 $(call inherit-product, device/nubia/NX669J/device.mk)
 
 PRODUCT_DEVICE := NX669J
-PRODUCT_NAME := omni_NX669J
+PRODUCT_NAME := twrp_NX669J
 PRODUCT_BRAND := nubia
 PRODUCT_MODEL := NX669J
 PRODUCT_MANUFACTURER := nubia
