@@ -8,5 +8,7 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),NX669J)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+include $(LOCAL_PATH)/BoardConfig.mk
+include $(LOCAL_PATH)/device.mk
+include $(LOCAL_PATH)/twrp_NX669J.mk
 endif
