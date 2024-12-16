@@ -33,3 +33,16 @@ TW_EXCLUDE_MOUNTS := /firmware
 
 # Use compiled recovery
 TW_USE_COMPILED_RECOVERY := true
+
+# A/B partition support
+TW_AB_DEVICE := true
+
+# Other flags
+TW_BOARD_HAS_QTI_HARDWARE := true
+TW_HAS_NO_REAL_SDCARD := true
+TW_NEEDS_NEW_BLKDISCARD := true
+TW_NO_LEGACY_PROPS := true
+
+# Super partition unmap
+TW_INCLUDE_SUPER := true
+TW_SUPER_PARTITION_UNMAP := true
