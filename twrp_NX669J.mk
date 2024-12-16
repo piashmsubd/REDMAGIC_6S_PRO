@@ -15,6 +15,12 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from NX669J device
 $(call inherit-product, device/nubia/NX669J/device.mk)
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.twrp.device=NX669J
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    ro.build.date.utc=$(shell date +%s) \
+    ro.build.date=$(shell date)
+
 PRODUCT_DEVICE := NX669J
 PRODUCT_NAME := twrp_NX669J
 PRODUCT_BRAND := nubia
