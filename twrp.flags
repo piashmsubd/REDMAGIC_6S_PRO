@@ -43,6 +43,10 @@ TW_HAS_NO_REAL_SDCARD := true
 TW_NEEDS_NEW_BLKDISCARD := true
 TW_NO_LEGACY_PROPS := true
 
-# Super partition unmap
+# Super partition support
 TW_INCLUDE_SUPER := true
 TW_SUPER_PARTITION_UNMAP := true
+
+# No encryption flag
+TW_NO_ENCRYPTED_BACKUPS := true
+TW_DISABLE_DM_VERITY := true
