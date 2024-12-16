@@ -45,3 +45,7 @@ AB_OTA_UPDATE_VENDOR := true
 # Additional packages
 PRODUCT_PACKAGES += \
     some_extra_package_name
+
+# Boot partition
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/etc/recovery.fstab
