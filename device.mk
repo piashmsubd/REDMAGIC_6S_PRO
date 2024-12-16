@@ -6,6 +6,7 @@
 #
 
 LOCAL_PATH := device/nubia/NX669J
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -25,11 +26,11 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.lahaina \
     libgptutils \
     libz \
-    libcutils
+    libutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
-    cppreopts.sh \
+    otapreopt.sh \
     update_engine \
     update_verifier \
     update_engine_sideload
