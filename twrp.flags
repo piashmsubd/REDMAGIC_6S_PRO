@@ -50,3 +50,6 @@ TW_SUPER_PARTITION_UNMAP := true
 # No encryption flag
 TW_NO_ENCRYPTED_BACKUPS := true
 TW_DISABLE_DM_VERITY := true
+
+# Build target
+TARGET_BOOT := true
